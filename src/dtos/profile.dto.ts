@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsDateString, IsEnum, IsNotEmpty, IsString } from 'class-validator';
-import { GenderEnum } from 'src/commons';
+import { GenderEnum } from '../commons';
 
 export class AddProfileDTO {
   @ApiProperty({ example: '1', type: 'string' })

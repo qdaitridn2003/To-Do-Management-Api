@@ -12,10 +12,10 @@ import {
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiQuery, ApiTags } from '@nestjs/swagger';
 
-import { GroupService } from 'src/services';
-import { AddGroupDTO, EditGroupDTO } from 'src/dtos';
+import { GroupService } from '../services';
+import { AddGroupDTO, EditGroupDTO } from '../dtos';
 import { Request } from 'express';
-import { JwtPayload } from 'src/types';
+import { JwtPayload } from '../types';
 
 @Controller('/group')
 @ApiTags('Group')

@@ -1,4 +1,4 @@
-import { PriorityEnum, StatusEnum } from 'src/commons';
+import { PriorityEnum, StatusEnum } from '../commons';
 import {
   Column,
   CreateDateColumn,

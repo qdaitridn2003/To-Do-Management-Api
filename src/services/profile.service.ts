@@ -4,8 +4,8 @@ import { Repository } from 'typeorm';
 import { JwtService } from '@nestjs/jwt';
 import { v4 as uuidV4 } from 'uuid';
 
-import { AccountEntity, ProfileEntity } from 'src/entities';
-import { AddProfileParams, EditProfileParams } from 'src/types';
+import { AccountEntity, ProfileEntity } from '../entities';
+import { AddProfileParams, EditProfileParams } from '../types';
 import { FirebaseService } from './firebase.service';
 
 @Injectable({})

@@ -2,9 +2,9 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 
-import { GroupEntity, TaskEntity } from 'src/entities';
-import { TaskParams } from 'src/types';
-import { paginationHelper } from 'src/utils';
+import { GroupEntity, TaskEntity } from '../entities';
+import { TaskParams } from '../types';
+import { paginationHelper } from '../utils';
 
 @Injectable()
 export class TaskService {

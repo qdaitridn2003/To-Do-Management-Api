@@ -2,9 +2,9 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 
-import { GroupEntity, ProfileEntity } from 'src/entities';
-import { GroupParams } from 'src/types';
-import { paginationHelper } from 'src/utils';
+import { GroupEntity, ProfileEntity } from '../entities';
+import { GroupParams } from '../types';
+import { paginationHelper } from '../utils';
 
 @Injectable()
 export class GroupService {

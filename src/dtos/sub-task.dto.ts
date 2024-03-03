@@ -1,7 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsNotEmpty, IsString } from 'class-validator';
 
-import { PriorityEnum, StatusEnum } from 'src/commons';
+import { PriorityEnum, StatusEnum } from '../commons';
 
 export class AddSubTaskDTO {
   @ApiProperty({ type: 'string', example: 'example', required: true })

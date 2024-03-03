@@ -10,7 +10,7 @@ import {
 } from 'typeorm';
 import { v4 as uuid } from 'uuid';
 
-import { RoleEnum, StrategyEnum } from 'src/commons';
+import { RoleEnum, StrategyEnum } from '../commons';
 import { ProfileEntity } from './profile.entity';
 
 @Entity({ name: 'accounts' })

@@ -2,9 +2,9 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 
-import { SubTaskEntity, TaskEntity } from 'src/entities';
-import { SubTaskParams } from 'src/types';
-import { paginationHelper } from 'src/utils';
+import { SubTaskEntity, TaskEntity } from '../entities';
+import { SubTaskParams } from '../types';
+import { paginationHelper } from '../utils';
 
 @Injectable()
 export class SubTaskService {

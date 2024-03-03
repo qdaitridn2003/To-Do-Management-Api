@@ -1,4 +1,4 @@
-import { StrategyEnum } from 'src/commons';
+import { StrategyEnum } from '../commons';
 
 export type RegisterAccountParams = {
   username: string;

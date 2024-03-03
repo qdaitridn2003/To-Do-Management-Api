@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { TaskController } from 'src/controllers';
-import { GroupEntity, TaskEntity } from 'src/entities';
-import { TaskService } from 'src/services';
+import { TaskController } from '../controllers';
+import { GroupEntity, TaskEntity } from '../entities';
+import { TaskService } from '../services';
 
 @Module({
   imports: [TypeOrmModule.forFeature([TaskEntity, GroupEntity])],

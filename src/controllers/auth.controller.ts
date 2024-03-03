@@ -14,8 +14,8 @@ import {
   FacebookAuthGuard,
   GoogleAuthGuard,
   CheckStrategyGuard,
-} from 'src/guards';
-import { AuthService } from 'src/services';
+} from '../guards';
+import { AuthService } from '../services';
 import {
   ChangePasswordDTO,
   LoginDTO,
@@ -23,10 +23,10 @@ import {
   PasswordDTO,
   SetPasswordDTO,
   UsernameDTO,
-} from 'src/dtos';
-import { JwtPayload } from 'src/types';
-import { StrategyDecorator } from 'src/decorators';
-import { StrategyEnum } from 'src/commons';
+} from '../dtos';
+import { JwtPayload } from '../types';
+import { StrategyDecorator } from '../decorators';
+import { StrategyEnum } from '../commons';
 
 @Controller('/auth')
 @ApiTags('Auth')

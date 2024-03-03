@@ -11,8 +11,8 @@ import {
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiQuery, ApiTags } from '@nestjs/swagger';
 
-import { SubTaskService } from 'src/services';
-import { AddSubTaskDTO, EditSubTaskDTO } from 'src/dtos';
+import { SubTaskService } from '../services';
+import { AddSubTaskDTO, EditSubTaskDTO } from '../dtos';
 
 @Controller('/sub-task')
 @ApiTags('Sub Task')

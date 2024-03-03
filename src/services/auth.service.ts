@@ -2,7 +2,7 @@ import { HttpException, HttpStatus, Inject, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 
-import { AccountEntity, ProfileEntity } from 'src/entities';
+import { AccountEntity, ProfileEntity } from '../entities';
 import { JwtService } from '@nestjs/jwt';
 import { MailerService } from './mailer.service';
 import {
@@ -13,8 +13,8 @@ import {
   RegisterAccountParams,
   ResetPasswordParams,
   SetPasswordParams,
-} from 'src/types';
-import { hashHandler, otpHandler } from 'src/utils';
+} from '../types';
+import { hashHandler, otpHandler } from '../utils';
 
 @Injectable({})
 export class AuthService {

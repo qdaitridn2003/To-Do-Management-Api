@@ -1,7 +1,7 @@
 import { CanActivate, ExecutionContext, Injectable } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
-import { MetaDataKey } from 'src/commons';
-import { JwtPayload } from 'src/types';
+import { MetaDataKey } from '../commons';
+import { JwtPayload } from '../types';
 
 @Injectable({})
 export class CheckStrategyGuard implements CanActivate {

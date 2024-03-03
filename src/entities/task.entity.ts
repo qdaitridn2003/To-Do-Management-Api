@@ -10,7 +10,7 @@ import {
 } from 'typeorm';
 import { v4 as uuid } from 'uuid';
 
-import { PriorityEnum, StatusEnum } from 'src/commons';
+import { PriorityEnum, StatusEnum } from '../commons';
 import { GroupEntity } from './group.entity';
 import { SubTaskEntity } from './sub-task.entity';
 

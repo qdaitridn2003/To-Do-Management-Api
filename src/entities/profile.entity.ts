@@ -11,7 +11,7 @@ import {
 } from 'typeorm';
 import { v4 as uuid } from 'uuid';
 
-import { GenderEnum } from 'src/commons';
+import { GenderEnum } from '../commons';
 import { GroupEntity } from './group.entity';
 
 @Entity({ name: 'profiles' })

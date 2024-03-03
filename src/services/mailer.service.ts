@@ -3,7 +3,7 @@ import * as Nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 import SMTPTransport from 'nodemailer/lib/smtp-transport';
 
-import { emailHtml } from 'src/commons';
+import { emailHtml } from '../commons';
 
 @Injectable({})
 export class MailerService {

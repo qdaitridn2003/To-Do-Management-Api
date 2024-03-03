@@ -11,11 +11,11 @@ import {
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiBody, ApiConsumes, ApiTags } from '@nestjs/swagger';
 
-import { ProfileService } from 'src/services';
-import { AddProfileDTO, AvatarDTO, EditProfileDTO } from 'src/dtos';
+import { ProfileService } from '../services';
+import { AddProfileDTO, AvatarDTO, EditProfileDTO } from '../dtos';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { Request } from 'express';
-import { JwtPayload } from 'src/types';
+import { JwtPayload } from '../types';
 
 @Controller('/profile')
 @ApiTags('Profile')

@@ -10,8 +10,8 @@ import {
   Query,
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiQuery, ApiTags } from '@nestjs/swagger';
-import { AddTaskDTO, EditTaskDTO } from 'src/dtos';
-import { TaskService } from 'src/services';
+import { AddTaskDTO, EditTaskDTO } from '../dtos';
+import { TaskService } from '../services';
 
 @Controller('/task')
 @ApiTags('Task')
