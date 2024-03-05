@@ -1,6 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
-import * as Fs from 'fs';
+// import * as Fs from 'fs';
 import * as ExpressSession from 'express-session';
 import * as Passport from 'passport';
 
@@ -8,13 +8,13 @@ import { AppModule } from './app.module';
 import { ValidationPipe } from '@nestjs/common';
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule, {
-    httpsOptions: {
-      key: Fs.readFileSync('./secrets/cert.key'),
-      cert: Fs.readFileSync('./secrets/cert.crt'),
-    },
-  });
-  // const app = await NestFactory.create(AppModule);
+  // const app = await NestFactory.create(AppModule, {
+  //   httpsOptions: {
+  //     key: Fs.readFileSync('./secrets/cert.key'),
+  //     cert: Fs.readFileSync('./secrets/cert.crt'),
+  //   },
+  // });
+  const app = await NestFactory.create(AppModule);
 
   app.useGlobalPipes(new ValidationPipe({}));
   app.enableCors();
