@@ -17,7 +17,7 @@ import { AddGroupDTO, EditGroupDTO } from '../dtos';
 import { Request } from 'express';
 import { JwtPayload } from '../types';
 
-@Controller('/group')
+@Controller('/api/group')
 @ApiTags('Group')
 @ApiBearerAuth()
 export class GroupController {

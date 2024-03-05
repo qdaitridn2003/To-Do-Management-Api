@@ -21,6 +21,7 @@ import {
   SubTaskController,
   TaskController,
 } from './controllers';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -42,7 +43,7 @@ import {
     TaskModule,
     SubTaskModule,
   ],
-  controllers: [],
+  controllers: [AppController],
   providers: [JwtService],
 })
 export class AppModule implements NestModule {

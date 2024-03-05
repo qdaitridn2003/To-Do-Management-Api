@@ -28,7 +28,7 @@ import { JwtPayload } from '../types';
 import { StrategyDecorator } from '../decorators';
 import { StrategyEnum } from '../commons';
 
-@Controller('/auth')
+@Controller('/api/auth')
 @ApiTags('Auth')
 export class AuthController {
   constructor(private authService: AuthService) {}

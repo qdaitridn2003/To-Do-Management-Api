@@ -14,7 +14,7 @@ import { ApiBearerAuth, ApiQuery, ApiTags } from '@nestjs/swagger';
 import { SubTaskService } from '../services';
 import { AddSubTaskDTO, EditSubTaskDTO } from '../dtos';
 
-@Controller('/sub-task')
+@Controller('/api/sub-task')
 @ApiTags('Sub Task')
 @ApiBearerAuth()
 export class SubTaskController {

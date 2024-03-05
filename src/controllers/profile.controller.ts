@@ -17,7 +17,7 @@ import { FileInterceptor } from '@nestjs/platform-express';
 import { Request } from 'express';
 import { JwtPayload } from '../types';
 
-@Controller('/profile')
+@Controller('/api/profile')
 @ApiTags('Profile')
 export class ProfileController {
   constructor(private profileService: ProfileService) {}

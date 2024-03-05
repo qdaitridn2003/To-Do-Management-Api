@@ -13,7 +13,7 @@ import { ApiBearerAuth, ApiQuery, ApiTags } from '@nestjs/swagger';
 import { AddTaskDTO, EditTaskDTO } from '../dtos';
 import { TaskService } from '../services';
 
-@Controller('/task')
+@Controller('/api/task')
 @ApiTags('Task')
 @ApiBearerAuth()
 export class TaskController {
